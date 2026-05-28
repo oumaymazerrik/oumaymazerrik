@@ -93,6 +93,8 @@
     .project-card p { color: rgba(255,255,255,.55); font-size: .9rem; line-height: 1.7; margin-bottom: 1.2rem; }
     .project-techs { display: flex; flex-wrap: wrap; gap: .4rem; }
     .tech-badge { background: rgba(0,180,216,.12); border: 1px solid rgba(0,180,216,.25); color: var(--teal); padding: .2rem .65rem; border-radius: 1rem; font-size: .75rem; font-weight: 600; }
+    /* Category label on project cards */
+    .project-category { display: inline-block; background: rgba(0,180,216,.18); color: var(--teal); font-size: .72rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; padding: .2rem .75rem; border-radius: 2rem; margin-bottom: .75rem; }
     #education { background: #fff; }
     .edu-timeline { position: relative; padding-left: 2rem; }
     .edu-timeline::before { content: ''; position: absolute; left: 0; top: 0; bottom: 0; width: 2px; background: linear-gradient(180deg, var(--teal), transparent); }
@@ -144,7 +146,7 @@
       <a href="#contact" class="btn-outline">Me contacter</a>
     </div>
     <div class="hero-stats">
-      <div class="stat"><strong>3+</strong><span>Projets</span></div>
+      <div class="stat"><strong>6+</strong><span>Projets</span></div>
       <div class="stat"><strong>5+</strong><span>Langages</span></div>
       <div class="stat"><strong>3</strong><span>Langues</span></div>
     </div>
@@ -208,12 +210,41 @@
       </div>
     </div>
     <div class="skill-card">
+      <div class="skill-icon">⚙️</div>
+      <h3>Backend &amp; Frameworks</h3>
+      <div class="skill-tags">
+        <span class="tag">Spring Boot</span><span class="tag">Spring Security</span>
+        <span class="tag">JPA / Hibernate</span><span class="tag">Java 21</span>
+        <span class="tag">JWT</span><span class="tag">BCrypt</span><span class="tag">REST API</span>
+      </div>
+    </div>
+    <div class="skill-card">
+      <div class="skill-icon">⚛️</div>
+      <h3>Frontend Moderne</h3>
+      <div class="skill-tags">
+        <span class="tag">React</span><span class="tag">Vite</span>
+        <span class="tag">React Router</span><span class="tag">React Query</span>
+        <span class="tag">Nginx</span>
+      </div>
+    </div>
+    <div class="skill-card">
       <div class="skill-icon">📊</div>
       <h3>Big Data &amp; Data Science</h3>
       <div class="skill-tags">
-        <span class="tag">Talend</span><span class="tag">Hadoop</span><span class="tag">Spark</span>
+        <span class="tag">Talend</span><span class="tag">Hadoop / HDFS</span><span class="tag">Spark</span>
+        <span class="tag">Kafka</span><span class="tag">Hive</span>
         <span class="tag">Power BI</span><span class="tag">Pandas</span>
         <span class="tag">Scikit-learn</span><span class="tag">Machine Learning</span>
+      </div>
+    </div>
+    <div class="skill-card">
+      <div class="skill-icon">🧠</div>
+      <h3>NLP &amp; MLOps</h3>
+      <div class="skill-tags">
+        <span class="tag">NLP</span><span class="tag">Text Classification</span>
+        <span class="tag">Détection de spam</span><span class="tag">MLflow</span>
+        <span class="tag">Pipeline CI/CD</span><span class="tag">Jenkins</span>
+        <span class="tag">Grafana</span><span class="tag">Prometheus</span>
       </div>
     </div>
     <div class="skill-card">
@@ -226,11 +257,12 @@
     </div>
     <div class="skill-card">
       <div class="skill-icon">🛠️</div>
-      <h3>Outils &amp; DevOps</h3>
+      <h3>DevOps &amp; Outils</h3>
       <div class="skill-tags">
-        <span class="tag">Git/GitHub</span><span class="tag">Linux</span>
-        <span class="tag">VS Code</span><span class="tag">IntelliJ</span>
-        <span class="tag">Eclipse</span><span class="tag">Docker</span>
+        <span class="tag">Docker</span><span class="tag">Docker Compose</span>
+        <span class="tag">Git / GitHub</span><span class="tag">Jenkins</span>
+        <span class="tag">Linux</span><span class="tag">VS Code</span>
+        <span class="tag">IntelliJ</span><span class="tag">Eclipse</span>
       </div>
     </div>
     <div class="skill-card">
@@ -258,8 +290,10 @@
     <div class="section-line"></div>
   </div>
   <div class="projects-grid fade-in">
+
     <div class="project-card">
       <div class="project-num">01</div>
+      <div class="project-category">Computer Vision · PFE</div>
       <h3>Moteur de recherche d'images similaires</h3>
       <p>Mise en place d'un moteur de recherche d'images basé sur des techniques de Machine Learning et de similarité visuelle. Projet de fin d'études (PFE).</p>
       <div class="project-techs">
@@ -269,8 +303,10 @@
         <span class="tech-badge">Similarité visuelle</span>
       </div>
     </div>
+
     <div class="project-card">
       <div class="project-num">02</div>
+      <div class="project-category">Big Data · BI</div>
       <h3>Data Warehouse — Analyse prédictive</h3>
       <p>Conception et implémentation d'un entrepôt de données avec Talend. Analyse prédictive sur la répartition des tendances. Tableaux de bord dynamiques avec Power BI.</p>
       <div class="project-techs">
@@ -280,8 +316,10 @@
         <span class="tech-badge">ETL</span>
       </div>
     </div>
+
     <div class="project-card">
       <div class="project-num">03</div>
+      <div class="project-category">Web · Full Stack</div>
       <h3>Application web — Gestion restaurant</h3>
       <p>Développement collaboratif d'une application web de gestion de commandes et de suivi des stocks pour un restaurant.</p>
       <div class="project-techs">
@@ -291,6 +329,58 @@
         <span class="tech-badge">JavaScript</span>
       </div>
     </div>
+
+    <div class="project-card">
+      <div class="project-num">04</div>
+      <div class="project-category">NLP · Machine Learning</div>
+      <h3>Détection de spam — SMS &amp; Email</h3>
+      <p>Système de classification NLP pour détecter automatiquement les spams dans des datasets de SMS et d'emails. Entraînement, évaluation et comparaison de modèles de machine learning sur texte court.</p>
+      <div class="project-techs">
+        <span class="tech-badge">NLP</span>
+        <span class="tech-badge">Python</span>
+        <span class="tech-badge">Scikit-learn</span>
+        <span class="tech-badge">Text Classification</span>
+        <span class="tech-badge">Pandas</span>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <div class="project-num">05</div>
+      <div class="project-category">Full Stack · Big Data · Sécurité</div>
+      <h3>BoostCoach Sport Buddy</h3>
+      <p>Plateforme personnalisée de coaching sportif combinant une application web dynamique, l'exploitation de données analytiques en temps réel et un système de recommandation intelligent. Vise à optimiser l'expérience utilisateur tout en restant économiquement accessible.</p>
+      <div class="project-techs">
+        <span class="tech-badge">React</span>
+        <span class="tech-badge">Vite</span>
+        <span class="tech-badge">Spring Boot</span>
+        <span class="tech-badge">Spring Security</span>
+        <span class="tech-badge">JWT / BCrypt</span>
+        <span class="tech-badge">MySQL</span>
+        <span class="tech-badge">Kafka</span>
+        <span class="tech-badge">HDFS</span>
+        <span class="tech-badge">Hive</span>
+        <span class="tech-badge">Docker</span>
+        <span class="tech-badge">Nginx</span>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <div class="project-num">06</div>
+      <div class="project-category">MLOps · CI/CD · Monitoring</div>
+      <h3>Classification de projets ML — Pipeline MLOps</h3>
+      <p>Classification multi-classes de texte court : à partir du titre et de la description d'un projet, le modèle prédit l'une des 4 catégories (computer-vision, NLP, mlops, other). Inclut training, évaluation, pipeline CI/CD automatisé et monitoring en production.</p>
+      <div class="project-techs">
+        <span class="tech-badge">Python</span>
+        <span class="tech-badge">NLP</span>
+        <span class="tech-badge">Text Classification</span>
+        <span class="tech-badge">Jenkins</span>
+        <span class="tech-badge">CI/CD</span>
+        <span class="tech-badge">Docker</span>
+        <span class="tech-badge">Grafana</span>
+        <span class="tech-badge">Prometheus</span>
+      </div>
+    </div>
+
   </div>
 </section>
 

@@ -183,6 +183,6 @@ Le projet couvre l'ensemble du cycle de vie ML : training, évaluation, déploie
 
 <div align="center">
 
-*Fait avec ❤️ — © 2025 Zerrik Oumayma*
+*Fait avec ❤️ — © 2026 Zerrik Oumayma*
 
 </div>

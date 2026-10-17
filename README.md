@@ -1,188 +1,105 @@
 <div align="center">
-
-# 👩‍💻 Zerrik Oumayma — Portfolio
-
-**Étudiante en Master Big Data & IoT · ENSAM Mohammédia**
-
-[![Portfolio](https://img.shields.io/badge/🌐_Portfolio-Live-00b4d8?style=for-the-badge)](https://zerrik-oumayma.github.io)
-[![Email](https://img.shields.io/badge/Email-zerrikomayma@gmail.com-0077b6?style=for-the-badge&logo=gmail&logoColor=white)](mailto:zerrikomayma@gmail.com)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0077B5?style=for-the-badge&logo=linkedin)](https://linkedin.com)
-[![GitHub](https://img.shields.io/badge/GitHub-Follow-181717?style=for-the-badge&logo=github)](https://github.com)
-
+👩‍💻 Oumayma Zerrik — Data & AI Portfolio
+Étudiante en Master Big Data & IoT · ENSAM  
+Data Engineering · Data Science · Machine Learning · MLOps
+![Portfolio](https://img.shields.io/badge/Portfolio-Website-00b4d8?style=for-the-badge&logo=githubpages&logoColor=white)
+![Email](https://img.shields.io/badge/Email-Contact-0077b6?style=for-the-badge&logo=gmail&logoColor=white)
+![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)
+![GitHub](https://img.shields.io/badge/GitHub-Projects-181717?style=for-the-badge&logo=github)
 </div>
-
 ---
-
-## 🎯 À propos
-
-Portfolio personnel de **Zerrik Oumayma**, étudiante en **Master Big Data et Internet des Objets** à l'École Nationale Supérieure des Arts et Métiers (ENSAM) de Mohammédia.
-
-Ce portfolio présente mon parcours, mes compétences techniques et mes projets académiques couvrant les domaines de la **Data Science**, du **Machine Learning**, du **Big Data** et du **développement Full Stack**.
-
+🎯 À propos
+Étudiante en Master Big Data & Internet des Objets (IoT) à l'ENSAM, je développe des projets autour de la Data Engineering, Data Analytics, Data Science, Intelligence Artificielle et MLOps.
+Je m'intéresse particulièrement à la construction de pipelines Batch & Streaming, au traitement distribué, à la valorisation des données et au déploiement de modèles de Machine Learning.
 ---
-
-## 🗂️ Projets
-
-### 01 · Moteur de recherche d'images similaires *(PFE)*
+🚀 Projets
+01 · IndustryPulse — Industrial IoT Data Platform
+> **Data Engineering · Batch & Streaming · Industrial IoT**
+Plateforme de traitement et d'analyse de données industrielles : ingestion d'événements IoT, pipelines de traitement Batch et Streaming, stockage analytique et visualisation des indicateurs opérationnels.
+Stack : `Python` `MQTT` `Kafka` `Apache Spark` `PostgreSQL` `TimescaleDB` `Grafana` `Docker`
+🔗 Voir le projet
+02 · Pipeline MLOps — Classification de projets ML
+> **Machine Learning · NLP · CI/CD · Monitoring**
+Classification automatique de descriptions de projets en catégories, avec entraînement, évaluation et automatisation d'un pipeline MLOps.
+Stack : `Python` `Scikit-learn` `NLP` `Jenkins` `Docker` `MLflow` `Prometheus` `Grafana`
+03 · Data Warehouse & Predictive Analytics
+> **Data Analytics · ETL · Business Intelligence**
+Conception d'un entrepôt de données, préparation et transformation des données, analyses SQL et tableaux de bord décisionnels.
+Stack : `Talend` `SQL` `ETL` `Data Warehouse` `Power BI`
+04 · Détection de spam — SMS & Email
+> **NLP · Text Classification · Machine Learning**
+Prétraitement de textes, entraînement et comparaison de modèles de classification pour détecter les messages indésirables.
+Stack : `Python` `Pandas` `Scikit-learn` `NLP`
+05 · Fake News Detection
+> **NLP · Deep Learning · Transformers**
+Étude comparative de modèles de classification de textes pour distinguer les informations fiables des fausses informations, avec expérimentation de DistilBERT.
+Stack : `Python` `Scikit-learn` `Transformers` `PyTorch` `DistilBERT`
+06 · Similar Image Search Engine
 > **Computer Vision · Machine Learning**
-
-Mise en place d'un moteur de recherche d'images basé sur des techniques de Machine Learning et de similarité visuelle.
-
-**Stack :** `Python` `Machine Learning` `Computer Vision`
-
+Moteur de recherche d'images similaires reposant sur l'analyse de caractéristiques visuelles et des mesures de similarité.
+Stack : `Python` `Computer Vision` `Machine Learning`
+07 · BoostCoach — Sport Buddy
+> **Full Stack · Data Platform**
+Application de coaching sportif combinant un backend Java, une interface React et des composants de traitement de données.
+Stack : `Spring Boot` `React` `MySQL` `Kafka` `HDFS` `Hive` `Docker` `JWT`
+08 · Intelligent Entity Resolution Platform (en développement)
+> **Data Quality · Record Linkage · NLP**
+Projet de rapprochement et de déduplication d'entités, avec comparaison de chaînes, scoring et interface web dédiée.
+Stack : `Python` `FastAPI` `React` `Fuzzy Matching` `Docker`
 ---
-
-### 02 · Data Warehouse — Analyse prédictive
-> **Big Data · Business Intelligence**
-
-Conception et implémentation d'un entrepôt de données avec Talend, analyse prédictive et tableaux de bord dynamiques avec Power BI.
-
-**Stack :** `Talend` `Power BI` `ETL` `Data Warehouse`
-
+🛠️ Compétences techniques
+Domaine	Technologies et outils
+Data Engineering & Streaming	Apache Kafka, Apache Spark, Apache Flink (fondamentaux), Hadoop, HDFS, Hive, MQTT, ETL, Batch & Streaming
+Data Analytics & BI	Python, Pandas, NumPy, SQL, Power BI, Excel, Data Visualization, Talend
+Machine Learning & AI	Scikit-learn, PyTorch, Transformers, Classification, NLP, Computer Vision
+MLOps & DevOps	MLflow, Docker, Docker Compose, Jenkins, CI/CD, Prometheus, Grafana, Git, GitHub
+Databases	PostgreSQL, TimescaleDB, MySQL, MongoDB, Oracle, SQL avancé
+Cloud & Infrastructure	Microsoft Azure, AWS Cloud Fundamentals, VMware vSphere, Linux
+Programming & APIs	Python, Java, JavaScript, Spring Boot, FastAPI, REST APIs, React
+Statistiques	R, SPSS, statistiques descriptives et inférentielles
 ---
-
-### 03 · Application web — Gestion restaurant
-> **Full Stack · Web**
-
-Développement collaboratif d'une application de gestion de commandes et de suivi des stocks pour un restaurant.
-
-**Stack :** `Java` `Servlets/JSP` `Bootstrap` `JavaScript`
-
+🏅 Certifications & formations
+Formation / certification	Organisme
+Confluent Apache Flink Fundamentals	Confluent
+Data Analytics Essentials	Cisco
+Microsoft Azure Fundamentals (AZ-900)	Microsoft
+AWS Academy Cloud Foundations	AWS Academy
+VMware vSphere — Virtualisation	Formation VMware / Union IT Service
+Advanced Deep Learning with Keras	DataCamp
+RNNs for Language Modeling with Keras	DataCamp
+Image Modeling with Keras	DataCamp
+MongoDB Aggregation Fundamentals	MongoDB
+Responsible AI Principles & Practices	Microsoft Learn
+> Les intitulés regroupent certifications, attestations de formation et cours terminés. Les liens de vérification peuvent être ajoutés individuellement lorsqu'ils sont disponibles.
 ---
-
-### 04 · Détection de spam — SMS & Email
-> **NLP · Machine Learning**
-
-Système de classification NLP pour détecter automatiquement les spams dans des datasets de SMS et d'emails. Comparaison de plusieurs modèles de machine learning.
-
-**Stack :** `Python` `NLP` `Scikit-learn` `Pandas` `Text Classification`
-
+💼 Expérience professionnelle
+Stagiaire Cloud & Virtualisation — Union IT Service  
+Février – Avril 2026
+Découverte et pratique des environnements Microsoft Azure et VMware vSphere.
+Travaux de virtualisation et d'administration d'infrastructures.
+Formation aux fondamentaux du Cloud et de la virtualisation.
 ---
-
-### 05 · BoostCoach Sport Buddy
-> **Full Stack · Big Data · Sécurité**
-
-Plateforme personnalisée de coaching sportif combinant une application web dynamique, l'exploitation de données analytiques en temps réel (streaming) et un système de recommandation intelligent. Objectif : allier performance, personnalisation et accessibilité économique.
-
-**Architecture :**
-- **Frontend :** React · Vite · React Router · React Query
-- **Backend :** Java 21 · Spring Boot · Spring Security · JPA
-- **Base de données :** MySQL
-- **Big Data :** Kafka · HDFS · Hive
-- **Sécurité :** JWT · BCrypt · Gestion des rôles
-- **DevOps :** Docker · Docker Compose · Nginx
-
+🎓 Formation académique
+Période	Diplôme	Établissement
+En cours	Master Big Data & Internet des Objets	ENSAM
+2024–2025	Licence Sciences des Données & Informatique Décisionnelle	FSTM — Université Hassan II
+2021–2024	DEUST	FSTM — Université Hassan II
+2021	Baccalauréat Sciences Physiques & Chimiques	Maroc
 ---
-
-### 06 · Classification de projets ML — Pipeline MLOps
-> **MLOps · NLP · CI/CD · Monitoring**
-
-Classification multi-classes de texte court : à partir du titre et de la description d'un projet, le modèle prédit l'une des 4 catégories suivantes :
-
-`computer-vision` · `natural-language-processing` · `mlops` · `other`
-
-Le projet couvre l'ensemble du cycle de vie ML : training, évaluation, déploiement et monitoring en production.
-
-**Stack :** `Python` `NLP` `Scikit-learn` `Jenkins` `Docker` `Grafana` `Prometheus`
-
-| Composant | Outil |
-|-----------|-------|
-| Training & Évaluation | Python · Scikit-learn |
-| Pipeline CI/CD | Jenkins |
-| Conteneurisation | Docker |
-| Monitoring | Grafana + Prometheus |
-
+🤝 Engagement associatif
+Ambassadeurs du Sourire — Mohammédia  
+Participation à l'organisation logistique et aux activités de terrain d'une caravane humanitaire en soutien aux personnes touchées par le séisme d'Al Haouz en 2023.
 ---
-
-## 🛠️ Compétences techniques
-
-### Langages & Développement
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
-![Java](https://img.shields.io/badge/Java-ED8B00?style=flat&logo=openjdk&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black)
-![C](https://img.shields.io/badge/C-00599C?style=flat&logo=c&logoColor=white)
-![HTML/CSS](https://img.shields.io/badge/HTML%2FCSS-E34F26?style=flat&logo=html5&logoColor=white)
-
-### Backend & Frameworks
-![Spring Boot](https://img.shields.io/badge/Spring_Boot-6DB33F?style=flat&logo=spring-boot&logoColor=white)
-![Spring Security](https://img.shields.io/badge/Spring_Security-6DB33F?style=flat&logo=spring&logoColor=white)
-![JWT](https://img.shields.io/badge/JWT-000000?style=flat&logo=jsonwebtokens&logoColor=white)
-
-### Frontend
-![React](https://img.shields.io/badge/React-20232A?style=flat&logo=react&logoColor=61DAFB)
-![Vite](https://img.shields.io/badge/Vite-646CFF?style=flat&logo=vite&logoColor=white)
-
-### Big Data & Data Science
-![Kafka](https://img.shields.io/badge/Apache_Kafka-231F20?style=flat&logo=apache-kafka&logoColor=white)
-![Hadoop](https://img.shields.io/badge/Hadoop-66CCFF?style=flat&logo=apache&logoColor=black)
-![Spark](https://img.shields.io/badge/Apache_Spark-E25A1C?style=flat&logo=apache-spark&logoColor=white)
-![Power BI](https://img.shields.io/badge/Power_BI-F2C811?style=flat&logo=power-bi&logoColor=black)
-![Scikit-learn](https://img.shields.io/badge/Scikit--learn-F7931E?style=flat&logo=scikit-learn&logoColor=white)
-
-### Bases de données
-![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=flat&logo=mysql&logoColor=white)
-![MongoDB](https://img.shields.io/badge/MongoDB-4EA94B?style=flat&logo=mongodb&logoColor=white)
-![Oracle](https://img.shields.io/badge/Oracle-F80000?style=flat&logo=oracle&logoColor=white)
-
-### DevOps & MLOps
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white)
-![Jenkins](https://img.shields.io/badge/Jenkins-D24939?style=flat&logo=jenkins&logoColor=white)
-![Git](https://img.shields.io/badge/Git-F05032?style=flat&logo=git&logoColor=white)
-![Microsoft Azure](https://img.shields.io/badge/Microsoft_Azure-0078D4?style=flat&logo=microsoftazure&logoColor=white)
-![VMware vSphere](https://img.shields.io/badge/VMware_vSphere-607078?style=flat&logo=vmware&logoColor=white)
-![Grafana](https://img.shields.io/badge/Grafana-F46800?style=flat&logo=grafana&logoColor=white)
-![Prometheus](https://img.shields.io/badge/Prometheus-E6522C?style=flat&logo=prometheus&logoColor=white)
-![Linux](https://img.shields.io/badge/Linux-FCC624?style=flat&logo=linux&logoColor=black)
-
+🌍 Langues
+Arabe : langue maternelle
+Français : bilingue
+Anglais : intermédiaire avancé (B2)
 ---
-
-## 💼 Expérience
-
-| Poste | Organisme | Missions principales |
-|-------|-----------|----------------------|
-| Stage — Virtualisation des serveurs avec vSphere VMware | Union IT Service | Configuration, administration et suivi d'environnements virtualisés avec VMware vSphere |
-
----
-
-## 🎓 Formation
-
-| Diplôme | Établissement | Spécialité |
-|---------|--------------|------------|
-| Microsoft Azure AZ-900 | Union IT Service | Fondamentaux du cloud Azure |
-| Formation | Union IT Service | Virtualisation des serveurs avec vSphere VMware |
-| Master | ENSAM Mohammédia | Big Data & Internet des Objets |
-| DEUST | FSTM · UNH2 | Informatique & Mathématiques appliquées |
-| Licence | FSTM · UNH2 | Sciences des Données & Informatique Décisionnelle |
-| Baccalauréat | Lycée Hassan Bnou-Tabit | Sciences Physique-Chimie BIOF |
-
----
-
-## 🌍 Langues
-
-| Langue | Niveau |
-|--------|--------|
-| 🇲🇦 Arabe | Langue maternelle |
-| 🇫🇷 Français | Bilingue |
-| 🇬🇧 Anglais | Intermédiaire avancé |
-
----
-
-## 📬 Contact
-
+📬 Contact
 <div align="center">
-
-📞 **+212 648 461 413**
-&nbsp;|&nbsp;
-✉️ **zerrikomayma@gmail.com**
-&nbsp;|&nbsp;
-📍 **Mohammédia, Maroc**
-
-</div>
-
----
-
-<div align="center">
-
-*Fait avec ❤️ — © 2026 Zerrik Oumayma*
-
+📧 zerrikomayma@gmail.com  
+📞 +212 648 461 413  
+📍 Maroc
+LinkedIn · GitHub · Portfolio
+© 2026 Oumayma Zerrik
 </div>

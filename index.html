@@ -1,11 +1,12 @@
 <!DOCTYPE html>
+
 <html lang="fr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Zerrik Oumayma — Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
-  <style>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Zerrik Oumayma — Portfolio</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&amp;family=DM+Sans:wght@300;400;500&amp;display=swap" rel="stylesheet"/>
+<style>
     :root {
       --navy: #0d1b2a;
       --teal: #00b4d8;
@@ -50,7 +51,8 @@
     .avatar-ring { width: 320px; height: 320px; border-radius: 50%; border: 2px solid rgba(0,180,216,.4); display: flex; align-items: center; justify-content: center; position: relative; animation: spin 20s linear infinite; }
     @keyframes spin { to { transform: rotate(360deg); } }
     .avatar-ring::before { content: ''; position: absolute; inset: 12px; border-radius: 50%; border: 1px dashed rgba(0,180,216,.25); }
-    .avatar-inner { width: 240px; height: 240px; border-radius: 50%; background: linear-gradient(135deg, var(--teal-dark), var(--teal)); display: flex; align-items: center; justify-content: center; animation: spin 20s linear infinite reverse; font-family: 'Playfair Display', serif; font-size: 5rem; color: #fff; font-weight: 900; box-shadow: 0 0 60px rgba(0,180,216,.3); }
+    .avatar-inner { width: 240px; height: 240px; border-radius: 50%; background: linear-gradient(135deg, var(--teal-dark), var(--teal)); display: flex; align-items: center; justify-content: center; overflow: hidden; animation: spin 20s linear infinite reverse; font-family: 'Playfair Display', serif; font-size: 5rem; color: #fff; font-weight: 900; box-shadow: 0 0 60px rgba(0,180,216,.3); }
+    .avatar-inner img { width: 100%; height: 100%; object-fit: cover; object-position: center 25%; border-radius: 50%; }
     .dot { position: absolute; width: 12px; height: 12px; border-radius: 50%; background: var(--teal); }
     .dot:nth-child(1) { top: -6px; left: 50%; }
     .dot:nth-child(2) { bottom: -6px; right: 30%; }
@@ -121,346 +123,151 @@
       .about-grid { grid-template-columns: 1fr; gap: 2.5rem; }
       nav ul { gap: 1rem; }
     }
-  </style>
+  
+#certifications { background:#fff; }
+.cert-intro { color:var(--muted); margin-bottom:2rem; line-height:1.7; }
+.cert-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(245px,1fr)); gap:1rem; }
+.cert-card { background:var(--cream); border:1px solid var(--sand); border-radius:1rem; padding:1.3rem; transition:transform .2s; }
+.cert-card:hover { transform:translateY(-3px); }
+.cert-provider { color:var(--teal-dark); font-size:.78rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase; margin-bottom:.5rem; }
+.cert-title { color:var(--navy); font-weight:700; margin-bottom:.5rem; }
+.cert-status { color:var(--muted); font-size:.82rem; line-height:1.5; }
+.project-link { display:inline-block; margin-top:1.1rem; color:var(--teal); text-decoration:none; font-weight:600; font-size:.85rem; }
+.project-link:hover { text-decoration:underline; }
+@media(max-width:900px) { nav { padding:1rem 4%; flex-wrap:wrap; gap:.7rem; } nav ul { gap:.65rem; flex-wrap:wrap; } nav ul a { font-size:.72rem; } }
+@media(max-width:600px) { section { padding:4rem 5%; } #hero { padding:9rem 5% 4rem; min-height:75vh; } .hero-text h1 { font-size:2.8rem; } .projects-grid,.skills-grid,.cert-grid { grid-template-columns:1fr; } .logo { font-size:1.15rem; } nav ul { gap:.55rem; } nav ul a { font-size:.65rem; } }
+</style>
 </head>
 <body>
-
 <nav>
-  <div class="logo">Z<span>.</span>Oumayma</div>
-  <ul>
-    <li><a href="#about">À propos</a></li>
-    <li><a href="#skills">Compétences</a></li>
-    <li><a href="#projects">Projets</a></li>
-    <li><a href="#experience">Expérience</a></li>
-    <li><a href="#education">Formation</a></li>
-    <li><a href="#contact">Contact</a></li>
-  </ul>
+<div class="logo">Z<span>.</span>Oumayma</div>
+<ul>
+<li><a href="#about">À propos</a></li>
+<li><a href="#skills">Compétences</a></li>
+<li><a href="#projects">Projets</a></li>
+<li><a href="#experience">Expérience</a></li>
+<li><a href="#education">Formation</a></li>
+<li><a href="#contact">Contact</a></li><li><a href="#certifications">Certifications</a></li>
+</ul>
 </nav>
-
 <section id="hero">
-  <div class="hero-text">
-    <div class="hero-tag">✦ Disponible pour un stage PFE</div>
-    <h1>Zerrik<br/><em>Oumayma</em></h1>
-    <p>Étudiante en Master Big Data &amp; IoT à l'ENSAM Mohammédia. Passionnée par la data science, le machine learning et le développement de solutions à fort impact.</p>
-    <div class="hero-btns">
-      <a href="#projects" class="btn-primary">Voir mes projets</a>
-      <a href="#contact" class="btn-outline">Me contacter</a>
-    </div>
-    <div class="hero-stats">
-      <div class="stat"><strong>6+</strong><span>Projets</span></div>
-      <div class="stat"><strong>5+</strong><span>Langages</span></div>
-      <div class="stat"><strong>3</strong><span>Langues</span></div>
-    </div>
-  </div>
-  <div class="hero-visual">
-    <div class="avatar-ring">
-      <div class="dot"></div><div class="dot"></div><div class="dot"></div>
-      <div class="avatar-inner">ZO</div>
-    </div>
-  </div>
-</section>
+<div class="hero-text">
+<div class="hero-tag">✦ Data Engineering · AI · Big Data</div>
+<h1>Zerrik<br/><em>Oumayma</em></h1>
+<p>Étudiante en Master Big Data &amp; IoT à l’ENSAM, je conçois des pipelines de données, des solutions Machine Learning et des applications orientées données.</p>
+<div class="hero-btns">
+<a class="btn-primary" href="#projects">Voir mes projets</a>
+<a class="btn-outline" href="#contact">Me contacter</a>
+</div>
 
+</div>
+<div class="hero-visual">
+<div class="avatar-ring">
+<div class="dot"></div><div class="dot"></div><div class="dot"></div>
+<div class="avatar-inner"><img src="photo-profil.jpeg" alt="Portrait de Oumayma Zerrik" /></div>
+</div>
+</div>
+</section>
 <section id="about">
-  <div class="about-grid fade-in">
-    <div class="about-text">
-      <div class="section-label">— À propos de moi</div>
-      <h2 class="section-title">Qui suis-je ?</h2>
-      <div class="section-line"></div>
-      <p>Je suis Zerrik Oumayma, étudiante en Master Big Data et Internet des Objets à l'École Nationale Supérieure des Arts et Métiers (ENSAM) de Mohammédia.</p>
-      <p>Passionnée par le développement de solutions innovantes et performantes, je cherche un stage de fin d'études (PFA) pour mettre mes compétences au service de projets à fort impact, alliant efficacité technique et valeur ajoutée concrète.</p>
-      <div class="contact-chips">
-        <span class="chip">📞 +212 648 461 413</span>
-        <span class="chip">✉️ zerrikomayma@gmail.com</span>
-        <span class="chip">📍 Mohammédia, Maroc</span>
-      </div>
-    </div>
-    <div>
-      <div class="section-label" style="margin-bottom:1.5rem;">— Langues</div>
-      <div class="lang-grid">
-        <div class="lang-item">
-          <div class="lang-top"><span>Français</span><span style="color:var(--teal)">Bilingue</span></div>
-          <div class="lang-bar"><div class="lang-fill" style="width:95%"></div></div>
-        </div>
-        <div class="lang-item">
-          <div class="lang-top"><span>Anglais</span><span style="color:var(--teal)">Intermédiaire avancé</span></div>
-          <div class="lang-bar"><div class="lang-fill" style="width:70%"></div></div>
-        </div>
-        <div class="lang-item">
-          <div class="lang-top"><span>Arabe</span><span style="color:var(--teal)">Langue maternelle</span></div>
-          <div class="lang-bar"><div class="lang-fill" style="width:100%"></div></div>
-        </div>
-      </div>
-    </div>
-  </div>
+<div class="about-grid fade-in">
+<div class="about-text">
+<div class="section-label">— À propos de moi</div>
+<h2 class="section-title">Qui suis-je ?</h2>
+<div class="section-line"></div>
+<p>Je suis Zerrik Oumayma, étudiante en Master Big Data et Internet des Objets à l'École Nationale Supérieure des Arts et Métiers (ENSAM) de Mohammédia.</p>
+<p>Je m'intéresse à l'ensemble du cycle de vie de la donnée : ingestion, transformation, analyse, modélisation et déploiement. Mes projets associent Big Data, streaming, IA et MLOps. Je suis disponible pour un stage PFE de six mois à partir de janvier 2027.</p>
+<div class="contact-chips">
+<span class="chip">📞 +212 648 461 413</span>
+<span class="chip">✉️ zerrikomayma@gmail.com</span>
+<span class="chip">📍 Mohammédia, Maroc</span>
+</div>
+</div>
+<div>
+<div class="section-label" style="margin-bottom:1.5rem;">— Langues</div>
+<div class="lang-grid">
+<div class="lang-item">
+<div class="lang-top"><span>Français</span><span style="color:var(--teal)">Bilingue</span></div>
+<div class="lang-bar"><div class="lang-fill" style="width:95%"></div></div>
+</div>
+<div class="lang-item">
+<div class="lang-top"><span>Anglais</span><span style="color:var(--teal)">Intermédiaire avancé</span></div>
+<div class="lang-bar"><div class="lang-fill" style="width:70%"></div></div>
+</div>
+<div class="lang-item">
+<div class="lang-top"><span>Arabe</span><span style="color:var(--teal)">Langue maternelle</span></div>
+<div class="lang-bar"><div class="lang-fill" style="width:100%"></div></div>
+</div>
+</div>
+</div>
+</div>
 </section>
-
 <section id="skills">
-  <div class="fade-in">
-    <div class="section-label">— Ce que je maîtrise</div>
-    <h2 class="section-title">Compétences techniques</h2>
-    <div class="section-line"></div>
-  </div>
-  <div class="skills-grid fade-in">
-    <div class="skill-card">
-      <div class="skill-icon">💻</div>
-      <h3>Développement</h3>
-      <div class="skill-tags">
-        <span class="tag">Java</span><span class="tag">Python</span><span class="tag">C</span>
-        <span class="tag">JavaScript</span><span class="tag">HTML/CSS</span>
-        <span class="tag">JSP</span><span class="tag">Servlets</span><span class="tag">Bootstrap</span>
-      </div>
-    </div>
-    <div class="skill-card">
-      <div class="skill-icon">⚙️</div>
-      <h3>Backend &amp; Frameworks</h3>
-      <div class="skill-tags">
-        <span class="tag">Spring Boot</span><span class="tag">Spring Security</span>
-        <span class="tag">JPA / Hibernate</span><span class="tag">Java 21</span>
-        <span class="tag">JWT</span><span class="tag">BCrypt</span><span class="tag">REST API</span>
-      </div>
-    </div>
-    <div class="skill-card">
-      <div class="skill-icon">⚛️</div>
-      <h3>Frontend Moderne</h3>
-      <div class="skill-tags">
-        <span class="tag">React</span><span class="tag">Vite</span>
-        <span class="tag">React Router</span><span class="tag">React Query</span>
-        <span class="tag">Nginx</span>
-      </div>
-    </div>
-    <div class="skill-card">
-      <div class="skill-icon">📊</div>
-      <h3>Big Data &amp; Data Science</h3>
-      <div class="skill-tags">
-        <span class="tag">Talend</span><span class="tag">Hadoop / HDFS</span><span class="tag">Spark</span>
-        <span class="tag">Kafka</span><span class="tag">Hive</span>
-        <span class="tag">Power BI</span><span class="tag">Pandas</span>
-        <span class="tag">Scikit-learn</span><span class="tag">Machine Learning</span>
-      </div>
-    </div>
-    <div class="skill-card">
-      <div class="skill-icon">🧠</div>
-      <h3>NLP &amp; MLOps</h3>
-      <div class="skill-tags">
-        <span class="tag">NLP</span><span class="tag">Text Classification</span>
-        <span class="tag">Détection de spam</span><span class="tag">MLflow</span>
-        <span class="tag">Pipeline CI/CD</span><span class="tag">Jenkins</span>
-        <span class="tag">Grafana</span><span class="tag">Prometheus</span>
-      </div>
-    </div>
-    <div class="skill-card">
-      <div class="skill-icon">🗄️</div>
-      <h3>Bases de données</h3>
-      <div class="skill-tags">
-        <span class="tag">MySQL</span><span class="tag">MongoDB</span><span class="tag">Oracle</span>
-        <span class="tag">MERISE/UML</span><span class="tag">SQL avancé</span>
-      </div>
-    </div>
-    <div class="skill-card">
-      <div class="skill-icon">🛠️</div>
-      <h3>DevOps, Cloud &amp; Virtualisation</h3>
-      <div class="skill-tags">
-        <span class="tag">Docker</span><span class="tag">Docker Compose</span>
-        <span class="tag">Git / GitHub</span><span class="tag">Jenkins</span>
-        <span class="tag">Microsoft Azure</span><span class="tag">AZ-900</span>
-        <span class="tag">VMware vSphere</span><span class="tag">Virtualisation des serveurs</span>
-        <span class="tag">Linux</span><span class="tag">VS Code</span>
-        <span class="tag">IntelliJ</span><span class="tag">Eclipse</span>
-      </div>
-    </div>
-    <div class="skill-card">
-      <div class="skill-icon">📈</div>
-      <h3>Outils statistiques</h3>
-      <div class="skill-tags">
-        <span class="tag">R / R Studio</span><span class="tag">SPSS</span><span class="tag">Pandas</span>
-      </div>
-    </div>
-    <div class="skill-card">
-      <div class="skill-icon">🤝</div>
-      <h3>Soft Skills</h3>
-      <div class="skill-tags">
-        <span class="tag">Travail en équipe</span><span class="tag">Autonomie</span>
-        <span class="tag">Esprit d'analyse</span><span class="tag">Adaptabilité</span>
-      </div>
-    </div>
-  </div>
+<div class="fade-in">
+<div class="section-label">— Ce que je maîtrise</div>
+<h2 class="section-title">Compétences techniques</h2>
+<div class="section-line"></div>
+</div>
+<div class="skills-grid fade-in">
+<div class="skill-card"><div class="skill-icon">📊</div><h3>Data Analytics & Business Intelligence</h3><div class="skill-tags"><span class="tag">Python</span><span class="tag">Pandas</span><span class="tag">NumPy</span><span class="tag">SQL</span><span class="tag">Power BI</span><span class="tag">Excel</span><span class="tag">Data Visualization</span><span class="tag">EDA</span><span class="tag">Data Storytelling</span><span class="tag">Tableau</span></div></div>
+<div class="skill-card"><div class="skill-icon">🏗️</div><h3>Data Engineering & Big Data</h3><div class="skill-tags"><span class="tag">Apache Spark</span><span class="tag">PySpark</span><span class="tag">Kafka</span><span class="tag">Hadoop</span><span class="tag">HDFS</span><span class="tag">Hive</span><span class="tag">ETL / ELT</span><span class="tag">Data Warehousing</span><span class="tag">Data Lakes</span><span class="tag">Batch Processing</span></div></div>
+<div class="skill-card"><div class="skill-icon">🌊</div><h3>Real-Time Data & Streaming</h3><div class="skill-tags"><span class="tag">Spark Structured Streaming</span><span class="tag">Apache Flink</span><span class="tag">MQTT</span><span class="tag">Kafka</span><span class="tag">TimescaleDB</span><span class="tag">Stream Processing</span><span class="tag">Event-Time Processing</span></div></div>
+<div class="skill-card"><div class="skill-icon">🧠</div><h3>Machine Learning & Data Science</h3><div class="skill-tags"><span class="tag">Scikit-learn</span><span class="tag">Supervised Learning</span><span class="tag">Classification</span><span class="tag">Regression</span><span class="tag">Clustering</span><span class="tag">Feature Engineering</span><span class="tag">Model Evaluation</span><span class="tag">Statistics</span></div></div>
+<div class="skill-card"><div class="skill-icon">💬</div><h3>NLP & Deep Learning</h3><div class="skill-tags"><span class="tag">NLP</span><span class="tag">Text Classification</span><span class="tag">Transformers</span><span class="tag">DistilBERT</span><span class="tag">PyTorch</span><span class="tag">Sentence Transformers</span><span class="tag">Computer Vision</span></div></div>
+<div class="skill-card"><div class="skill-icon">🚀</div><h3>MLOps & Model Deployment</h3><div class="skill-tags"><span class="tag">MLflow</span><span class="tag">Jenkins</span><span class="tag">CI/CD</span><span class="tag">Docker</span><span class="tag">FastAPI</span><span class="tag">REST APIs</span><span class="tag">Prometheus</span><span class="tag">Grafana</span><span class="tag">Model Monitoring</span></div></div>
+<div class="skill-card"><div class="skill-icon">🗄️</div><h3>Databases & Data Modeling</h3><div class="skill-tags"><span class="tag">PostgreSQL</span><span class="tag">MySQL</span><span class="tag">MongoDB</span><span class="tag">Oracle</span><span class="tag">SQL avancé</span><span class="tag">TimescaleDB</span><span class="tag">MERISE / UML</span></div></div>
+<div class="skill-card"><div class="skill-icon">☁️</div><h3>Cloud & Infrastructure</h3><div class="skill-tags"><span class="tag">Microsoft Azure</span><span class="tag">AWS Cloud Foundations</span><span class="tag">VMware vSphere</span><span class="tag">Docker Compose</span><span class="tag">Git / GitHub</span><span class="tag">Linux</span></div></div>
+<div class="skill-card"><div class="skill-icon">💻</div><h3>Programming & Development</h3><div class="skill-tags"><span class="tag">Python</span><span class="tag">Java</span><span class="tag">JavaScript</span><span class="tag">Spring Boot</span><span class="tag">React</span><span class="tag">HTML / CSS</span></div></div>
+<div class="skill-card"><div class="skill-icon">📈</div><h3>Statistical Tools</h3><div class="skill-tags"><span class="tag">R / RStudio</span><span class="tag">SPSS</span><span class="tag">Excel</span><span class="tag">Statistical Analysis</span></div></div>
+<div class="skill-card"><div class="skill-icon">🤝</div><h3>Soft Skills</h3><div class="skill-tags"><span class="tag">Teamwork</span><span class="tag">Analytical Thinking</span><span class="tag">Problem Solving</span><span class="tag">Adaptability</span><span class="tag">Communication</span></div></div>
+</div>
 </section>
-
 <section id="projects">
-  <div class="fade-in">
-    <div class="section-label">— Ce que j'ai réalisé</div>
-    <h2 class="section-title">Projets significatifs</h2>
-    <div class="section-line"></div>
-  </div>
-  <div class="projects-grid fade-in">
-
-    <div class="project-card">
-      <div class="project-num">01</div>
-      <div class="project-category">Computer Vision · PFE</div>
-      <h3>Moteur de recherche d'images similaires</h3>
-      <p>Mise en place d'un moteur de recherche d'images basé sur des techniques de Machine Learning et de similarité visuelle. Projet de fin d'études (PFE).</p>
-      <div class="project-techs">
-        <span class="tech-badge">Machine Learning</span>
-        <span class="tech-badge">Python</span>
-        <span class="tech-badge">Computer Vision</span>
-        <span class="tech-badge">Similarité visuelle</span>
-      </div>
-    </div>
-
-    <div class="project-card">
-      <div class="project-num">02</div>
-      <div class="project-category">Big Data · BI</div>
-      <h3>Data Warehouse — Analyse prédictive</h3>
-      <p>Conception et implémentation d'un entrepôt de données avec Talend. Analyse prédictive sur la répartition des tendances. Tableaux de bord dynamiques avec Power BI.</p>
-      <div class="project-techs">
-        <span class="tech-badge">Talend</span>
-        <span class="tech-badge">Power BI</span>
-        <span class="tech-badge">Data Warehouse</span>
-        <span class="tech-badge">ETL</span>
-      </div>
-    </div>
-
-    <div class="project-card">
-      <div class="project-num">03</div>
-      <div class="project-category">Web · Full Stack</div>
-      <h3>Application web — Gestion restaurant</h3>
-      <p>Développement collaboratif d'une application web de gestion de commandes et de suivi des stocks pour un restaurant.</p>
-      <div class="project-techs">
-        <span class="tech-badge">Java</span>
-        <span class="tech-badge">Servlets / JSP</span>
-        <span class="tech-badge">Bootstrap</span>
-        <span class="tech-badge">JavaScript</span>
-      </div>
-    </div>
-
-    <div class="project-card">
-      <div class="project-num">04</div>
-      <div class="project-category">NLP · Machine Learning</div>
-      <h3>Détection de spam — SMS &amp; Email</h3>
-      <p>Système de classification NLP pour détecter automatiquement les spams dans des datasets de SMS et d'emails. Entraînement, évaluation et comparaison de modèles de machine learning sur texte court.</p>
-      <div class="project-techs">
-        <span class="tech-badge">NLP</span>
-        <span class="tech-badge">Python</span>
-        <span class="tech-badge">Scikit-learn</span>
-        <span class="tech-badge">Text Classification</span>
-        <span class="tech-badge">Pandas</span>
-      </div>
-    </div>
-
-    <div class="project-card">
-      <div class="project-num">05</div>
-      <div class="project-category">Full Stack · Big Data · Sécurité</div>
-      <h3>BoostCoach Sport Buddy</h3>
-      <p>Plateforme personnalisée de coaching sportif combinant une application web dynamique, l'exploitation de données analytiques en temps réel et un système de recommandation intelligent. Vise à optimiser l'expérience utilisateur tout en restant économiquement accessible.</p>
-      <div class="project-techs">
-        <span class="tech-badge">React</span>
-        <span class="tech-badge">Vite</span>
-        <span class="tech-badge">Spring Boot</span>
-        <span class="tech-badge">Spring Security</span>
-        <span class="tech-badge">JWT / BCrypt</span>
-        <span class="tech-badge">MySQL</span>
-        <span class="tech-badge">Kafka</span>
-        <span class="tech-badge">HDFS</span>
-        <span class="tech-badge">Hive</span>
-        <span class="tech-badge">Docker</span>
-        <span class="tech-badge">Nginx</span>
-      </div>
-    </div>
-
-    <div class="project-card">
-      <div class="project-num">06</div>
-      <div class="project-category">MLOps · CI/CD · Monitoring</div>
-      <h3>Classification de projets ML — Pipeline MLOps</h3>
-      <p>Classification multi-classes de texte court : à partir du titre et de la description d'un projet, le modèle prédit l'une des 4 catégories (computer-vision, NLP, mlops, other). Inclut training, évaluation, pipeline CI/CD automatisé et monitoring en production.</p>
-      <div class="project-techs">
-        <span class="tech-badge">Python</span>
-        <span class="tech-badge">NLP</span>
-        <span class="tech-badge">Text Classification</span>
-        <span class="tech-badge">Jenkins</span>
-        <span class="tech-badge">CI/CD</span>
-        <span class="tech-badge">Docker</span>
-        <span class="tech-badge">Grafana</span>
-        <span class="tech-badge">Prometheus</span>
-      </div>
-    </div>
-
-  </div>
+<div class="fade-in">
+<div class="section-label">— Ce que j'ai réalisé</div>
+<h2 class="section-title">Projets significatifs</h2>
+<div class="section-line"></div>
+</div>
+<div class="projects-grid fade-in"><div class="project-card"><div class="project-num">01</div><div class="project-category">Data Engineering · IoT</div><h3>IndustryPulse — Industrial IoT Data Platform</h3><p>Plateforme de traitement de données industrielles combinant ingestion MQTT/Kafka, traitements Spark batch et streaming, stockage TimescaleDB et visualisation Grafana.</p><div class="project-techs"><span class="tech-badge">Kafka</span><span class="tech-badge">Spark</span><span class="tech-badge">MQTT</span><span class="tech-badge">TimescaleDB</span><span class="tech-badge">Docker</span><span class="tech-badge">Grafana</span></div><a class="project-link" href="https://github.com/oumaymazerrik/IndustryPulse-Industrial-IoT-Data-Platform" rel="noopener noreferrer" target="_blank">Voir sur GitHub ↗</a></div><div class="project-card"><div class="project-num">02</div><div class="project-category">MLOps · CI/CD</div><h3>Pipeline MLOps — Classification de projets</h3><p>Pipeline de classification NLP avec automatisation CI/CD, conteneurisation et suivi des performances des modèles.</p><div class="project-techs"><span class="tech-badge">Python</span><span class="tech-badge">NLP</span><span class="tech-badge">Jenkins</span><span class="tech-badge">Docker</span><span class="tech-badge">MLflow</span><span class="tech-badge">Prometheus</span><span class="tech-badge">Grafana</span></div></div><div class="project-card"><div class="project-num">03</div><div class="project-category">Data Analytics · BI</div><h3>Data Warehouse &amp; Predictive Analytics</h3><p>Conception d’un entrepôt de données, processus ETL, analyses SQL et tableaux de bord décisionnels Power BI.</p><div class="project-techs"><span class="tech-badge">Talend</span><span class="tech-badge">SQL</span><span class="tech-badge">ETL</span><span class="tech-badge">Power BI</span></div></div><div class="project-card"><div class="project-num">04</div><div class="project-category">NLP · Machine Learning</div><h3>Détection de spam SMS &amp; Email</h3><p>Prétraitement de textes, entraînement et comparaison de modèles de classification supervisée pour identifier les messages indésirables.</p><div class="project-techs"><span class="tech-badge">Python</span><span class="tech-badge">Pandas</span><span class="tech-badge">Scikit-learn</span><span class="tech-badge">NLP</span></div></div><div class="project-card"><div class="project-num">05</div><div class="project-category">Computer Vision</div><h3>Similar Image Search Engine</h3><p>Moteur de recherche d’images similaires fondé sur l’extraction de caractéristiques et la similarité visuelle.</p><div class="project-techs"><span class="tech-badge">Python</span><span class="tech-badge">Computer Vision</span><span class="tech-badge">Machine Learning</span></div></div><div class="project-card"><div class="project-num">06</div><div class="project-category">Full Stack · Data</div><h3>BoostCoach — Sport Buddy</h3><p>Application web de coaching sportif avec API REST, authentification et fonctionnalités orientées données.</p><div class="project-techs"><span class="tech-badge">React</span><span class="tech-badge">Spring Boot</span><span class="tech-badge">MySQL</span><span class="tech-badge">JWT</span><span class="tech-badge">Docker</span></div></div><div class="project-card"><div class="project-num">07</div><div class="project-category">NLP · Deep Learning</div><h3>Fake News Detection</h3><p>Étude comparative de modèles classiques et Transformers pour la classification de fausses informations.</p><div class="project-techs"><span class="tech-badge">Python</span><span class="tech-badge">Scikit-learn</span><span class="tech-badge">DistilBERT</span><span class="tech-badge">Transformers</span></div></div><div class="project-card"><div class="project-num">08</div><div class="project-category">Data Engineering · En cours</div><h3>Intelligent Entity Resolution Platform</h3><p>Développement progressif d’une plateforme de rapprochement et de déduplication d’entités avec fuzzy matching et API.</p><div class="project-techs"><span class="tech-badge">Python</span><span class="tech-badge">FastAPI</span><span class="tech-badge">React</span><span class="tech-badge">Docker</span></div></div></div>
 </section>
-
 <section id="experience">
-  <div class="fade-in">
-    <div class="section-label">— Expérience professionnelle</div>
-    <h2 class="section-title">Stage</h2>
-    <div class="section-line"></div>
-  </div>
-  <div class="edu-timeline fade-in">
-    <div class="edu-item">
-      <h3>Stage — Virtualisation des serveurs avec vSphere VMware</h3>
-      <div class="school">Union IT Service</div>
-      <p>Participation à des travaux de virtualisation d'infrastructures serveurs avec VMware vSphere, incluant la configuration, l'administration et le suivi d'environnements virtualisés.</p>
-    </div>
-  </div>
+<div class="fade-in">
+<div class="section-label">— Expérience professionnelle</div>
+<h2 class="section-title">Stage</h2>
+<div class="section-line"></div>
+</div>
+<div class="edu-timeline fade-in">
+<div class="edu-item">
+<h3>Stage Cloud &amp; Virtualisation | Février – Avril 2026</h3>
+<div class="school">Union IT Service</div>
+<p>Formation et travaux pratiques sur Microsoft Azure (fondamentaux cloud et AZ-900) et VMware vSphere (virtualisation, administration des machines virtuelles et infrastructure).</p>
+</div>
+</div>
 </section>
-
 <section id="education">
-  <div class="fade-in">
-    <div class="section-label">— Mon parcours</div>
-    <h2 class="section-title">Formation académique</h2>
-    <div class="section-line"></div>
-  </div>
-  <div class="edu-timeline fade-in">
-    <div class="edu-item">
-      <h3>Microsoft Azure AZ-900</h3>
-      <div class="school">Union IT Service</div>
-      <p>Fondamentaux du cloud Azure : services cloud, sécurité, gouvernance, tarification et modèles de déploiement.</p>
-    </div>
-    <div class="edu-item">
-      <h3>Virtualisation des serveurs avec vSphere VMware</h3>
-      <div class="school">Union IT Service</div>
-      <p>Formation orientée administration d'environnements virtualisés, gestion des machines virtuelles et consolidation des serveurs avec VMware vSphere.</p>
-    </div>
-    <div class="edu-item">
-      <h3>Master Big Data et Internet des Objets</h3>
-      <div class="school">École Nationale Supérieure des Arts et Métiers (ENSAM) </div>
-      <p>Spécialisation en Big Data, IoT, Machine Learning et traitement massif des données.</p>
-    </div>
-    <div class="edu-item">
-      <h3>Diplôme des Études Universitaires des Sciences et Techniques</h3>
-      <div class="school">FSTM | UNH2 | Mohammédia</div>
-      <p>Fondements en informatique, mathématiques appliquées et sciences des données.</p>
-    </div>
-    <div class="edu-item">
-      <h3>Licence — Sciences des Données et Informatique Décisionnelle</h3>
-      <div class="school">FSTM | UNH2 | Mohammédia</div>
-      <p>Spécialisation en analyse de données, modélisation et informatique décisionnelle.</p>
-    </div>
-    <div class="edu-item">
-      <h3>Baccalauréat — Sciences Physique-Chimie BIOF</h3>
-      <div class="school">Lycée Hassan Bnou-Tabit</div>
-      <p>Mention Sciences avec filière bilingue franco-arabe.</p>
-    </div>
-  </div>
-</section>
-
+<div class="fade-in">
+<div class="section-label">— Mon parcours</div>
+<h2 class="section-title">Formation académique</h2>
+<div class="section-line"></div>
+</div>
+<div class="edu-timeline fade-in"><div class="edu-item"><h3>Master Big Data &amp; Internet des Objets — En cours</h3><div class="school">ENSAM, Université Hassan II</div><p>Big Data, IoT, Machine Learning, Data Engineering et systèmes distribués.</p></div><div class="edu-item"><h3>Licence Sciences des Données &amp; Informatique Décisionnelle | 2024–2025</h3><div class="school">FSTM, Université Hassan II</div><p>Analyse de données, statistiques, bases de données et informatique décisionnelle.</p></div><div class="edu-item"><h3>DEUST | 2021–2024</h3><div class="school">FSTM, Université Hassan II</div><p>Fondements scientifiques, mathématiques et informatique.</p></div><div class="edu-item"><h3>Baccalauréat Sciences Physiques &amp; Chimiques | 2021</h3><div class="school">Maroc</div><p>Parcours scientifique.</p></div></div>
+</section><section id="certifications"><div class="fade-in"><div class="section-label">— Formation continue</div><h2 class="section-title">Certifications &amp; formations</h2><div class="section-line"></div><p class="cert-intro">Une sélection de certifications, badges et cours complétés. Les liens de vérification pourront être ajoutés individuellement.</p></div><div class="cert-grid fade-in"><article class="cert-card"><div class="cert-provider">Confluent</div><div class="cert-title">Apache Flink Fundamentals</div><div class="cert-status">Cours complété · Stream Processing</div></article><article class="cert-card"><div class="cert-provider">Cisco</div><div class="cert-title">Data Analytics Essentials</div><div class="cert-status">Formation / badge · SQL, Excel, Tableau, Data Storytelling</div></article><article class="cert-card"><div class="cert-provider">Microsoft</div><div class="cert-title">Azure Fundamentals (AZ-900)</div><div class="cert-status">Certification cloud</div></article><article class="cert-card"><div class="cert-provider">VMware</div><div class="cert-title">VMware vSphere</div><div class="cert-status">Formation et certification en virtualisation</div></article><article class="cert-card"><div class="cert-provider">AWS Academy</div><div class="cert-title">Cloud Foundations</div><div class="cert-status">Formation cloud</div></article><article class="cert-card"><div class="cert-provider">DataCamp</div><div class="cert-title">Advanced Deep Learning with Keras</div><div class="cert-status">Cours complété</div></article><article class="cert-card"><div class="cert-provider">DataCamp</div><div class="cert-title">RNNs for Language Modeling with Keras</div><div class="cert-status">Cours complété</div></article><article class="cert-card"><div class="cert-provider">DataCamp</div><div class="cert-title">Image Modeling with Keras</div><div class="cert-status">Cours complété</div></article><article class="cert-card"><div class="cert-provider">MongoDB</div><div class="cert-title">Aggregation Fundamentals</div><div class="cert-status">Formation complétée</div></article><article class="cert-card"><div class="cert-provider">Microsoft Learn</div><div class="cert-title">Responsible AI Principles &amp; Practices</div><div class="cert-status">Formation complétée</div></article><article class="cert-card"><div class="cert-provider">Google</div><div class="cert-title">Cybersecurity</div><div class="cert-status">Formation suivie — justificatif à ajouter</div></article></div></section>
 <section id="contact">
-  <div class="fade-in">
-    <div class="section-label">— Travaillons ensemble</div>
-    <h2 class="section-title">Me contacter</h2>
-    <div class="section-line"></div>
-    <p>Je suis actuellement à la recherche d'un stage de fin d'études. N'hésitez pas à me contacter pour discuter de vos projets !</p>
-    <div class="contact-links">
-      <a href="tel:+212648461413" class="contact-link">📞 +212 648 461 413</a>
-      <a href="mailto:zerrikomayma@gmail.com" class="contact-link">✉️ zerrikomayma@gmail.com</a>
-      <a href="https://github.com" target="_blank" class="contact-link">🐙 GitHub</a>
-      <a href="https://linkedin.com" target="_blank" class="contact-link">💼 LinkedIn</a>
-    </div>
-  </div>
+<div class="fade-in">
+<div class="section-label">— Travaillons ensemble</div>
+<h2 class="section-title">Me contacter</h2>
+<div class="section-line"></div>
+<p>Vous souhaitez échanger sur un projet Data, IA ou une opportunité professionnelle ? Contactez-moi.</p>
+<div class="contact-links">
+<a class="contact-link" href="tel:+212648461413">📞 +212 648 461 413</a>
+<a class="contact-link" href="mailto:zerrikomayma@gmail.com">✉️ zerrikomayma@gmail.com</a>
+<a class="contact-link" href="https://github.com/oumaymazerrik" target="_blank">🐙 GitHub</a>
+<a class="contact-link" href="https://www.linkedin.com/in/oumayma-zerrik-9b4432202" target="_blank">💼 LinkedIn</a>
+</div>
+</div>
 </section>
-
 <footer>
-  <p>© 2025 Zerrik Oumayma — Portfolio. Fait avec ❤️</p>
+<p>© 2026 Oumayma Zerrik — Portfolio</p>
 </footer>
-
 <script>
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(e => { if(e.isIntersecting) e.target.classList.add('visible'); });
